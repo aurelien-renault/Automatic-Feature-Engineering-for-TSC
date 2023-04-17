@@ -45,17 +45,17 @@ Once you got every csv features for every datasets, you’re ready to get result
 Once the csv files got saved in specified path, one can type the following :
  
 `python evaluator.py -d «my_path_to_data» -e RandomForestClassifier -kw ‘{«random_state»: 4}’ --preload -np`
-The `--preload` stands for preloading, which is mandatory for non-python libraries, and thus skip all features extraction step. `-np` add the non-python tools to libraries’ list>
+The `--preload` stands for preloading, which is mandatory for non-python libraries, and thus skip all features extraction step. `-np` add the non-python tools to libraries’ list.
 Outputs files are then available in the results folder, created within the specified savepath folder.
 
   
 ## B) Stacking libraries :
 
-To do be done (or already done by the time someone reads this)
-Create one `lib_stacking.py` file in the goal of simply launch one stacking exp like that : 
-`python lib_stacking.py -d -« my_path_to_data » -f « my_path_to_files » -m ‘Features’ --all`
+ In order to reproduce the results for the stacking strategies, please run the following :
   
-With `-m` argument standing for «mode» (implement the 3 different stacking one can see in sota cd, i.e. Features, Features_noROCKET, Features_python) and `--all` some boolean to decide to test all the possible stacking step for classif with provided lib or just compute the final one.
+`python evaluator.py -d -« my_path_to_data » -f « my_path_to_files » -stck -m 'Features'`
+  
+With `-m` argument standing for «mode» (implement the 3 different stacking one can see in sota cd, i.e. Features, Features_noROCKET, Features_python) and one can add the `--all` keywords which is some boolean to decide to test all the possible stacking step for classif with provided lib or just compute the final one.
 
  ## Please refer to it as :
   
