@@ -1,1 +1,7 @@
-
+sklearn
+xgboost
+sktime
+numba
+feature_tools
+tsfel
+tsfresh
