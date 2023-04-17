@@ -12,7 +12,7 @@ The `evaluator.py` provides the way to compile every tested python libraries. To
 
 In order to get results for all python libraries combined with one given classifier, e.g. RandomForestClassifier, type the following :
 
-`python evaluator.py -d « my_path_to_data » -e RandomForestClassifier -kw ‘{«random_state »:4 }’` 
+`python evaluator.py -d « my_path_to_data » -e RandomForestClassifier -kw ‘{«random_state»: 4}’` 
 
 You can as well provide any sklearn compatible estimator, in that case, you should import it opening the `evaluator.py` file. All the tested classifiers are already imported.
 
@@ -24,7 +24,7 @@ NOTE : the `evaluator.py` is also compatible for multivariate benchmark
   
 To get results for the only R tool (feasts) please type the following in your terminal :
   
-`RScript feasts.R -d «my_path_to_data » -s « my_path_to_save_features »`
+`RScript feasts.R -d «my_path_to_data» -s « my_path_to_save_features»`
 
 The features will be saved in .csv in the specified folder under the name ‘feasts_train.csv’ and ‘feasts_test.csv’.
 
@@ -33,15 +33,18 @@ The features will be saved in .csv in the specified folder under the name ‘fea
 To get results for the only matlab tool (hctsa) please type the following in your terminal (a matlab
 licence is required) :
   
-`matlab -r « n_features=1000; datapath= «my_path_to_data »;savepath= « my_path_to_save_features » main; quit; »`
-In order to use the matlab shortcut your .bashrc file should be provided with the path to your matlab version. Equivalently matlab keyword can be replace by `«Application/my_path_to_matlab»` or one can simply the Matlab desktop version and click the Run button.
+`matlab -r «n_features = 1000; datapath = «my_path_to_data»;savepath = «my_path_to_save_features» main; quit;»`
+
+In order to use the matlab shortcut your .bashrc file should be provided with the path to your matlab version. 
+Equivalently matlab keyword can be replace by `«Application/my_path_to_matlab»` or one can simply the Matlab desktop version and click the Run button.
+
 Once you got every csv features for every datasets, you’re ready to get results for the part <ref part stacking>.
 
 ### 4- Get results for non-python libraries :
   
 Once the csv files got saved in specified path, one can type the following :
  
-`python evaluator.py -d « my_path_to_data » -e RandomForestClassifier -kw ‘{«random_state »:4 }’ --preload <-np>`
+`python evaluator.py -d «my_path_to_data» -e RandomForestClassifier -kw ‘{«random_state»: 4}’ --preload <-np>`
 The `--preload` stands for preloading, which is mandatory for non-python libraries, and thus skip all features extraction step. <-np add the non-python tools to libraries’ list>
 Outputs files are then available in the results folder, created within the specified savepath folder.
 
