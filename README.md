@@ -53,7 +53,7 @@ Outputs files are then available in the results folder, created within the speci
 
  In order to reproduce the results for the stacking strategies, please run the following :
   
-`python evaluator.py -d -« my_path_to_data » -f « my_path_to_files » -stck -m 'Features'`
+`python stacking.py -d -« my_path_to_data » -f « my_path_to_files » -m 'Features'`
   
 With `-m` argument standing for «mode» (implement the 3 different stacking one can see in sota cd, i.e. Features, Features_noROCKET, Features_python) and one can add the `--all` keywords which is some boolean to decide to test all the possible stacking step for classif with provided lib or just compute the final one.
 
