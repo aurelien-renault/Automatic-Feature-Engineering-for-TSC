@@ -44,8 +44,8 @@ Once you got every csv features for every datasets, you’re ready to get result
   
 Once the csv files got saved in specified path, one can type the following :
  
-`python evaluator.py -d «my_path_to_data» -e RandomForestClassifier -kw ‘{«random_state»: 4}’ --preload <-np>`
-The `--preload` stands for preloading, which is mandatory for non-python libraries, and thus skip all features extraction step. <-np add the non-python tools to libraries’ list>
+`python evaluator.py -d «my_path_to_data» -e RandomForestClassifier -kw ‘{«random_state»: 4}’ --preload -np`
+The `--preload` stands for preloading, which is mandatory for non-python libraries, and thus skip all features extraction step. `-np` add the non-python tools to libraries’ list>
 Outputs files are then available in the results folder, created within the specified savepath folder.
 
   
