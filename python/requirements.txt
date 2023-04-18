@@ -1,7 +1,10 @@
-scikit-learn
+numpy
+pandas
+sklearn
 xgboost
-sktime
-numba
-feature_tools
-tsfel
-tsfresh
+tqdm
+sktime==0.11.0
+tsfresh==0.19.0
+tsfel==0.1.4
+tsfeatures==0.3.1
+featuretools==1.8.0
