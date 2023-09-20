@@ -1,4 +1,4 @@
-# Automatic-Feature-Engineering-for-TSC
+# Automatic-Feature-Engineering-for-TSC (AFT-TSC)
 
 This repository contains the code and data to reproduce results display in <link to paper>. The used TSC benchmark is the usual [UCR benchmark](https://www.timeseriesclassification.com) containing 112 datasets with same length and/or no missing values. The default train/test split is used here. In order to repeat the paper’s results, please use the following instructions.
 
